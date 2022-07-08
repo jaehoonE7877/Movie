@@ -395,7 +395,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1706" y="84"/>
+            <point key="canvasLocation" x="754" y="84"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="qlz-lB-Wfk">
@@ -430,8 +430,8 @@
                                             <constraint firstAttribute="height" constant="44" id="K1C-kK-Vv4"/>
                                             <constraint firstAttribute="width" constant="314" id="QFd-sL-6GN"/>
                                         </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Button"/>
                                         <connections>
                                             <action selector="resultButtonClicked:" destination="eht-YV-7FZ" eventType="touchUpInside" id="cME-QY-65k"/>
                                         </connections>
@@ -450,6 +450,7 @@
                     <navigationItem key="navigationItem" id="Thc-gf-cRA"/>
                     <connections>
                         <outlet property="bannerimageView" destination="AyP-hj-ysi" id="bMp-a2-b3b"/>
+                        <outlet property="movieButton" destination="kFy-h3-S1F" id="Qlv-qJ-I8w"/>
                         <outlet property="movieTitleLabel" destination="Twy-Yh-avK" id="HZc-G0-9BG"/>
                     </connections>
                 </viewController>

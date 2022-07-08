@@ -14,6 +14,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var movieTitleLabel: UILabel!
     @IBOutlet weak var bannerimageView: UIImageView!
     
+    @IBOutlet weak var movieButton: UIButton!
     
     
     //뷰컨트롤러 생명주기 종류 중 하나
@@ -30,9 +31,16 @@ class SecondViewController: UIViewController {
         bannerimageView.layer.borderColor = UIColor.blue.cgColor
         
         movieTitleLabel.text = "영화이름"
-        movieTitleLabel.backgroundColor = .systemBackground
+        movieTitleLabel.backgroundColor = .lightGray
         movieTitleLabel.textColor = .black
         movieTitleLabel.font = UIFont.boldSystemFont(ofSize: 25)
+        movieTitleLabel.layer.cornerRadius = 4
+        
+        movieButton.setTitle("눌러주세요", for: .normal)
+        movieButton.setTitleColor(.systemRed, for: .normal)
+        movieButton.backgroundColor = .lightGray
+        movieButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        movieButton.layer.cornerRadius = 4
         
     }
     
@@ -44,6 +52,7 @@ class SecondViewController: UIViewController {
         
         bannerimageView.image = UIImage(named: "movie\(movieNum)")
         
+        // movie text
         switch movieNum {
         case 1:
             movieTitleLabel.text = "암살"
